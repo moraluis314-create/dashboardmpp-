@@ -338,7 +338,7 @@ window.MPP_SOURCE_LABEL = "Reporte gerencial filtrado | 2026";
     $('sUfi').textContent=`${value(base.length)} registros del corte`;
     $('sMpp').textContent=state.paquete?'MPP del paquete seleccionado':'Planes de mantenimiento vendidos';
     $('sRate').textContent=state.paquete?'MPP del paquete / total UFI seleccionado':'Participación sobre UFI seleccionadas';
-    $('sIncent').textContent='Estimación antes de validación final';
+    $('sIncent').textContent='';
     const p2=rows.filter(r=>r.paquete===2).reduce((a,r)=>a+r.mpp,0);
     const p3=rows.filter(r=>r.paquete===3).reduce((a,r)=>a+r.mpp,0);
     const steps=p2*2+p3*3;
